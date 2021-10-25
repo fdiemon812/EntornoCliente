@@ -1,0 +1,65 @@
+header{
+text-align: center;
+font-style: red;
+
+
+}
+
+
+
+ 
+
+
+div label{
+    
+
+    
+    display: inline-block;
+    width: 200px;
+    margin-left: 30%;
+    margin-right: 10%;
+    margin-bottom: 15px;
+}
+
+
+.bien{
+
+border-color: #25b120;
+
+
+}
+
+.error{
+
+
+
+border-color: rgb(219, 9, 9);
+
+}
+
+
+table, td {
+text-align: center;
+border: rgb(5, 5, 5);
+border-style: solid;
+border-collapse: collapse;
+padding: 10px;
+
+
+}
+
+label{
+
+    width: 0px;
+    margin-right: 0px;
+}
+span label{
+    text-align: center;
+    
+}
+
+#botonesEnviar, #textoArticulos, #cabeceraTitulo{
+    text-align: center;
+    
+  
+}

@@ -1,0 +1,158 @@
+{
+  "posts": [
+    {
+      "titulo": "gola",
+      "autor": "flavio",
+      "articulo": "hola",
+      "id": 7
+    },
+    {
+      "titulo": "cara",
+      "autor": "flavio",
+      "articulo": "CARACOLAº",
+      "id": 8
+    },
+    {
+      "titulo": "asdasdas",
+      "autor": "flavio",
+      "articulo": "sdasda",
+      "id": 9
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "contenido": "hola caracolillaaaaaaaaaaaaaaa",
+      "fecha": "01-02-20",
+      "postId": "7"
+    },
+    {
+      "contenido": "hola caracolillaaaaaaaaaaaaaaa",
+      "fecha": "01-02-20",
+      "postId": "7",
+      "id": 4
+    },
+    {
+      "contenido": "hola caracolillaaaaaaaaaaaaaaa",
+      "fecha": "01-02-20",
+      "postId": "7",
+      "id": 5
+    },
+    {
+      "contenido": "hola caracolillaaaaaaaaaaaaaaa",
+      "fecha": "01-02-20",
+      "postId": "7",
+      "id": 6
+    },
+    {
+      "contenido": "hola caracolillaaaaaaaaaaaaaaa",
+      "fecha": "01-02-20",
+      "postId": "7",
+      "id": 7
+    },
+    {
+      "contenido": "hola caracolillaaaaaaaaaaaaaaa",
+      "fecha": "01-02-20",
+      "postId": "7",
+      "id": 8
+    },
+    {
+      "contenido": "fuckj",
+      "fecha": "01-02-20",
+      "postId": "7",
+      "id": 9
+    },
+    {
+      "contenido": "fuckj",
+      "fecha": "01-02-20",
+      "postId": "7",
+      "id": 10
+    },
+    {
+      "contenido": "fuckj",
+      "fecha": "01-02-20",
+      "postId": "7",
+      "id": 11
+    },
+    {
+      "contenido": "",
+      "fecha": "Thu Oct 21 2021",
+      "postId": "7",
+      "id": 25
+    },
+    {
+      "contenido": "",
+      "fecha": "Thu Oct 21 2021",
+      "postId": "7",
+      "id": 26
+    },
+    {
+      "contenido": "aaaaaa",
+      "fecha": "Fri Oct 22 2021",
+      "postId": "7",
+      "id": 37
+    },
+    {
+      "contenido": "sdfdsfdsf",
+      "fecha": "Fri Oct 22 2021",
+      "postId": "7",
+      "id": 38
+    },
+    {
+      "contenido": "sdfdsfdsf",
+      "fecha": "Fri Oct 22 2021",
+      "postId": "7",
+      "id": 39
+    },
+    {
+      "contenido": "sdfdsfdsfsadasdasd",
+      "fecha": "Fri Oct 22 2021",
+      "postId": "7",
+      "id": 40
+    },
+    {
+      "contenido": "dasdasdasd",
+      "fecha": "Fri Oct 22 2021",
+      "postId": "7",
+      "id": 41
+    },
+    {
+      "contenido": "cacacacacacaca",
+      "fecha": "Mon Oct 25 2021",
+      "postId": "8",
+      "id": 42
+    },
+    {
+      "contenido": "asdasdasdasd",
+      "fecha": "Mon Oct 25 2021",
+      "postId": "7",
+      "id": 43
+    },
+    {
+      "contenido": "ññññ",
+      "fecha": "Mon Oct 25 2021",
+      "postId": "9",
+      "id": 44
+    }
+  ],
+  "profile": [
+    {
+      "id": 1,
+      "name": "flavio",
+      "tlf": "123456789",
+      "mail": "hola@hola.co"
+    },
+    {
+      "name": "lola",
+      "tlf": "123456789",
+      "mail": "hola@hola.co",
+      "id": 2
+    },
+    {
+      "name": "Flavio",
+      "tlf": "650983490",
+      "mail": "hola@hola.com",
+      "id": 3
+    }
+  ]
+}
