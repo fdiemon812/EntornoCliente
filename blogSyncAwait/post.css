@@ -1,0 +1,17 @@
+body{
+
+text-align: center;
+
+}
+
+
+
+table, td {
+    text-align: center;
+    border: rgb(5, 5, 5);
+    border-style: solid;
+    border-collapse: collapse;
+    padding: 10px;
+    
+    
+    }

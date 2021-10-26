@@ -1,0 +1,40 @@
+La idea es hacer un blog que contendrá lo siguiente
+1. Tendremos un fichero json con las tablas que vamos a necesitar
+    usuario
+        -Nombre
+        -Apellidos
+        -Nick
+        -Fecha nacimiento
+        -dni
+
+    post
+        -Titulo
+        -Autor
+        -Contenido
+
+    comentarios
+        -Titulo
+        -Comentador
+        -Comentario
+        -Fecha
+
+2. index.html será una pagina de registro, con los siguientes campos, estos campos tendrán sus correspondientes validaciones
+    -Nombre
+    -Apellidos
+    -Nick
+    -Fecha nacimiento
+    -dni
+    -Contendrá un boton de registro que una vez validados todos los campos creará en la tabla usuario un nuevo campos
+
+3. listaPost.html será la pagina que contendrá los post creados
+    -Aparecerá una lista con el titulo de cada post junto al autor 
+    -Se podrá seleccionar el post que se elija para verlo mas en profundidad, lo cual nos transladará al archivo post.hmtl
+    -Se podrá eliminar el post que se elija
+    -(Dos botones, ver post y eliminar post)
+
+4. post.html será la página que contendrá el post detallado, está página contendrá lo siguiente
+    -Titulo del post
+    -Contenido
+    -Autor
+    -Lista de comentarios que pertenecen al post
+    -Campos para poder escribir un comentario, habrá un desplegable para elegir el autor del comentario, se introducirá ñla fecha del comentario
