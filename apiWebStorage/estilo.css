@@ -17,3 +17,9 @@ table, td{
     margin-bottom: 15%;
    
 }
+
+.tachado{
+
+    text-decoration-line: line-through;
+
+}
