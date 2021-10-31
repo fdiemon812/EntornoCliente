@@ -2,6 +2,8 @@ const pendingTasks = document.getElementById('pending-tasks')
 const finishedTasks = document.getElementById('finished-tasks')
 const doingTasks = document.getElementById('doing-tasks')
 
+listarTareas();
+
 //dataTransfer
 /*
     API drag & drop:
@@ -75,6 +77,13 @@ finishedTasks.addEventListener('drop', (e) => {
     element.classList.remove('active')
     const padre = element.parentNode.id
     
+
+    let objeto=JSON.parse(localStorage.getItem(element.id))
+    objeto.estado="finished";
+
+    localStorage.setItem(element.id, JSON.stringify(objeto) )
+
+
     switch (padre) {
         case 'pending-tasks':
           console.log('pendingTasks');
@@ -97,19 +106,25 @@ doingTasks.addEventListener('drop', (e) => {
     element.classList.remove('active')
     const padre= element.parentNode.id
 
+    
+    let objeto=JSON.parse(localStorage.getItem(element.id))
+    objeto.estado="doing";
+
+    localStorage.setItem(element.id, JSON.stringify(objeto) )
+
 
    switch (padre) {
        case 'pending-tasks':
            
            doingTasks.appendChild(pendingTasks.removeChild(element))
-           console.log('pending');
+           
+
            break;
         
         case 'finished-tasks':
         
             console.log('doingTasks');
             doingTasks.appendChild(finishedTasks.removeChild(element))
-
 
         break;
 
@@ -132,6 +147,13 @@ pendingTasks.addEventListener('drop', (e) => {
     const padre= element.parentNode.id
 
 
+
+    let objeto=JSON.parse(localStorage.getItem(element.id))
+    objeto.estado="pending";
+
+    localStorage.setItem(element.id, JSON.stringify(objeto) )
+
+
    switch (padre) {
        case 'doing-tasks':
            
@@ -151,3 +173,109 @@ pendingTasks.addEventListener('drop', (e) => {
 })
 
 
+// LOCAL STORAGE
+
+// CREANDO CONTADOR PARA ID TAREAS
+
+
+function sumaContador(){
+
+    
+    if(localStorage.length<1){
+        
+        localStorage.setItem("contador", "1");
+        
+
+
+    }else{
+        let sumaCont = parseInt(localStorage.getItem("contador")) + 1
+        localStorage.setItem("contador", sumaCont)
+
+    }
+
+}
+
+//BORRADO BOTON RESET
+document.getElementById("reset").addEventListener("click", () => {
+
+
+
+
+
+    localStorage.clear();
+    location.reload()
+
+})
+
+
+
+
+
+
+document.getElementById("enviar").addEventListener("click", addTarea);
+function addTarea(){
+
+    sumaContador();
+
+   let task= {
+
+    descripcion: document.getElementById("nuevaTarea").value,
+    estado: "pending"
+
+   }
+
+   localStorage.setItem(localStorage.getItem("contador"), JSON.stringify(task))
+   
+   location.reload();
+
+}
+
+
+function listarTareas(){
+    
+
+    Object.keys(localStorage).forEach(function(key){
+
+
+        if(key != "contador"){
+
+
+
+
+
+            let tarea= JSON.parse(localStorage.getItem(key));
+
+
+            if(tarea.estado=="pending"){
+
+                pendingTasks.getElementsByTagName("h2")[0].insertAdjacentHTML("afterend", '<div id="'+
+                key+'" class="task" draggable="true">'+tarea.descripcion+'</div>') 
+
+            }else if(tarea.estado=="doing"){
+                
+                
+                doingTasks.getElementsByTagName("h2")[0].insertAdjacentHTML("afterend", '<div id="'+
+                key+'" class="task" draggable="true">'+tarea.descripcion+'</div>') 
+
+            }else{
+                
+                finishedTasks.getElementsByTagName("h2")[0].insertAdjacentHTML("afterend", '<div id="'+
+                key+'" class="task" draggable="true">'+tarea.descripcion+'</div>') 
+
+
+            }
+
+            
+            
+
+
+
+
+
+
+
+        
+        }
+    })
+
+}
