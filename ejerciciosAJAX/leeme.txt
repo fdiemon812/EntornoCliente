@@ -1,0 +1,2 @@
+Para que funcione estos archivos deben estar en el repo DEVIL. Dentro de la ruta
+./data/www/ejerajax/htdocs/
