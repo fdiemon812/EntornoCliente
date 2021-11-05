@@ -158,7 +158,7 @@ pendingTasks.addEventListener('drop', (e) => {
        case 'doing-tasks':
            
            pendingTasks.appendChild(doingTasks.removeChild(element))
-           console.log('pending');
+          
            break;
         
         case 'finished-tasks':
@@ -236,12 +236,7 @@ function listarTareas(){
 
     Object.keys(localStorage).forEach(function(key){
 
-
         if(key != "contador"){
-
-
-
-
 
             let tarea= JSON.parse(localStorage.getItem(key));
 
