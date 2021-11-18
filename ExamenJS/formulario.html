@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    
+
+    <form action="">
+    <div>
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name" >
+
+        <p id="listaNombres"> </p>
+
+    </div>
+    <div>
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos" >
+
+    </div>
+    <div>
+        <label for="login">Login:</label>
+        <input type="text" name="login" id="login" >
+
+    </div>
+
+    <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" >
+
+    </div>
+
+
+
+    <div>
+        <label for="nacimiento">Fecha de Nacimiento</label>
+        <input type="date" name="nacimiento" id="nacimiento" >
+
+    </div>
+
+    <div>
+        <p>Edad</p>
+        <p id="edad"></p>
+
+    </div>
+
+
+    <div>
+
+        <input type="submit" id="enviar" value="Registra Usuario">
+        <input type="submit" id="borrar" value="Borrar Datos">
+        <input type="submit" id="consultar" value="Consultar Usuario">
+        <input type="submit" id="consultaUltimo" value="Consulta Último">
+
+    </div>
+    <div id="final">
+
+        <table id="tabla"></table>
+
+    </div>
+
+</form>
+
+</body>
+
+<script src="formulario.js"></script>
+</html>

@@ -1,0 +1,31 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "login": "AAAA",
+      "nombre": "ASDASD",
+      "apellidos": "ASDASDA",
+      "password": "ASDASD",
+      "edad": "ASDASD",
+      "fechaAlta": "ASDASD"
+    },
+    {
+      "id": 3,
+      "login": "pruebaJson",
+      "nombre": "pruebaJson",
+      "apellidos": "aaa aaaaA",
+      "password": "aaaaAAAA1234",
+      "edad": "25",
+      "fechaAlta": "2021-11-17T13:16:40.826Z"
+    },
+    {
+      "login": "pruebaJso",
+      "nombre": "pruebaJso",
+      "apellidos": "aaa aaaa",
+      "password": "aaaaAAAA1111",
+      "edad": "25",
+      "fechaAlta": "2021-11-17T13:17:26.123Z",
+      "id": 4
+    }
+  ]
+}
