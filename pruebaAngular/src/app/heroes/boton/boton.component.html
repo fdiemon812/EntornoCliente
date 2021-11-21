@@ -1,0 +1,17 @@
+
+<ul *ngFor="let hero of heroes">
+<li >{{hero}}</li>
+
+
+</ul>
+
+<form (ngSubmit)="agregar()">
+
+
+    <input ([ngModel])="nuevo.nombre" type="text" placeholder="Nombre" [value] = "nuevo.nombre"
+    (input) = "cambiarNombre($event)">
+    <input ([ngModel])="nuevo.hp" type="text" placeholder="Salud"
+    (input) =cambiarSalud($event)>
+    <input type="submit" value="Añadir">
+
+</form>
