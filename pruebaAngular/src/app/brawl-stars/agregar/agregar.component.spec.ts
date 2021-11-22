@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BotonComponent } from './boton.component';
+import { AgregarComponent } from './agregar.component';
 
-describe('BotonComponent', () => {
-  let component: BotonComponent;
-  let fixture: ComponentFixture<BotonComponent>;
+describe('AgregarComponent', () => {
+  let component: AgregarComponent;
+  let fixture: ComponentFixture<AgregarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BotonComponent ]
+      declarations: [ AgregarComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BotonComponent);
+    fixture = TestBed.createComponent(AgregarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
