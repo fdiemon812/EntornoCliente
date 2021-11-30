@@ -15,9 +15,18 @@ import { Injectable } from "@angular/core";
     // principio del array historial.
 
     buscarGifs(string:string){
-       
-        this._historial.unshift(string);
-        console.log(this._historial)
+
+       if( !this._historial.includes(string)){
+
+        if(this._historial.length<10){
+
+           this._historial.unshift(string);
+       }else{
+           this._historial.pop(); //borra el ultimo elemento del array
+           this._historial.unshift(string);
+
+            }
+        } 
     }
 
 }

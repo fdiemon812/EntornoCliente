@@ -19,9 +19,11 @@ export class BusquedaComponent implements OnInit {
 
   
   agregar(){
+    if(this.contenidoBusqueda!="" && this.contenidoBusqueda!=null){
 
-    this.gs.buscarGifs(this.contenidoBusqueda);
-    
+      this.gs.buscarGifs(this.contenidoBusqueda);
+    }
+    this.contenidoBusqueda="";
   }
 
 }
