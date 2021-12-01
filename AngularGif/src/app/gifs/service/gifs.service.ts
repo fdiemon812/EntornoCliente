@@ -1,18 +1,19 @@
+import { HttpClient, HttpParams } from "@angular/common/http";
 import { Injectable } from "@angular/core";
+import { ApiGif, DatosGif } from "../interface/gif.interface";
 
 @Injectable() export class GifsService{
 
     private _historial:string[]=[];
+    public listaDatos:DatosGif[]=[];
 
+    constructor(private http:HttpClient){}
     
-    // get historial() devuelve la propiedad privada historial que será un array de strings
 
     get historial():string[]{
         return [...this._historial];
     }
 
-    // buscarGifs ( query: string) recibe un string y lo añade al 
-    // principio del array historial.
 
     buscarGifs(string:string){
 
@@ -27,6 +28,19 @@ import { Injectable } from "@angular/core";
 
             }
         } 
+
+        const params = new HttpParams()
+          .set('api_key', "l4V1WgtxZngjZi9gegkll0IlcTe0m29Y")
+          .set('limit', '10')
+          .set('q', string );
+
+        this.http.get<ApiGif>("http://api.giphy.com/v1/gifs/search", {params:params})
+       .subscribe((apiData)=>{
+           
+        this.listaDatos=apiData.data;
+        ;});
     }
 
+
+ 
 }

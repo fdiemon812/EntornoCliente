@@ -5,6 +5,7 @@ import { BusquedaComponent } from './busqueda/busqueda.component';
 import { ResultadosComponent } from './resultados/resultados.component';
 import { FormsModule } from '@angular/forms';
 import { GifsService } from './service/gifs.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -19,7 +20,8 @@ import { GifsService } from './service/gifs.service';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers:[
     GifsService

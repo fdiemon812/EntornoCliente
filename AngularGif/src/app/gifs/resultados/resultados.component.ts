@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DatosGif } from '../interface/gif.interface';
+import { GifsService } from '../service/gifs.service';
 
 @Component({
   selector: 'app-resultados',
@@ -8,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResultadosComponent implements OnInit {
 
-  constructor() { }
+  constructor(private gs:GifsService) { }
 
   ngOnInit(): void {
   }
+
+
+
+ get arrayDatos():DatosGif[]{
+
+  return this.gs.listaDatos
+ } 
+ 
 
 }
