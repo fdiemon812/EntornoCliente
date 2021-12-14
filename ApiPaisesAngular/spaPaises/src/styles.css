@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+*{
+  font-family: 'Ubuntu', sans-serif;
+}
+html, body {
+  height: 100%;
+}
+
+#sidebar {
+  height: 100%;
+  min-height: 100vh;
+  min-width: 180px;
+  width: 30%;
+  font-size: 30px;
+}
+
+.Busqueda{
+  min-width: 180px;
+  width: 40%;
+}
