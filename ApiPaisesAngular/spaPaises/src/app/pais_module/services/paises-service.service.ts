@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
 import { SearchRESTCountries, Name } from '../interfaces/countries.interface';
+import { PaisSearch } from '../interfaces/pais.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -35,5 +36,13 @@ export class PaisesServiceService {
   buscarPaisesCapital(busqueda:string){
     let url: string = `${this.url_base}/capital/${busqueda}`;
     return this.httpClient.get<SearchRESTCountries[]>(url)
+  }
+
+
+  buscarPaisInfo(id:string){
+   let url="https://restcountries.com/v3.1/alpha/"+id;
+
+
+    return this.httpClient.get<SearchRESTCountries>(url);
   }
 }

@@ -11,7 +11,15 @@ export class PaisTablaComponent implements OnInit {
   @Input() countries: SearchRESTCountries[] = [];
   @Input() error: boolean=false;
   @Input() busqueda: string="";
+  
+  
+  
+  
+  
   constructor() { }
+
+
+
 
   ngOnInit(): void {
   }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router';
+import { SearchRESTCountries } from '../../interfaces/countries.interface';
 import { PaisesServiceService } from '../../services/paises-service.service';
 @Component({
   selector: 'app-ver-pais',
@@ -8,12 +9,30 @@ import { PaisesServiceService } from '../../services/paises-service.service';
 })
 export class VerPaisComponent implements OnInit {
 
-  constructor() { }
+   pais: any;
+
+
+  constructor(private ps:PaisesServiceService, private rutaActiva: ActivatedRoute  ) { }
 
   ngOnInit(): void {
+
+    this.buscarPais();
   }
 
   
+   buscarPais<PaisSearch>(){
+    console.log("snapshot es "+this.rutaActiva.snapshot.params['id']);
+    
 
+    this.ps.buscarPaisInfo(this.rutaActiva.snapshot.params['id']).subscribe(resp=>
+      {
+        this.pais = resp;
+        
+        console.log(this.pais.name);
+      })
+
+    
+  }
+  
 
 }

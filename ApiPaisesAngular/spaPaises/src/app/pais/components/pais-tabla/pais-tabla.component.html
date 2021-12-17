@@ -19,7 +19,7 @@
             <!-- La capital, el nombre del país y la población lo obtendremos de la api -->
             <td> {{ pais.population |number}} </td>
             <td>
-                <a [routerLink]="['/pais','es']">Ver..</a> <!-- Esto lo dejamos así de momento -->
+                <a [routerLink]="['/pais',pais.cca2]">Ver..</a> 
             </td>
         </tr>
     </tbody>
