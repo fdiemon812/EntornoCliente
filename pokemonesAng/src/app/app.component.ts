@@ -6,7 +6,7 @@ import { CardData } from './tarjetas/interfaces/card-data.interface';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
 
@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
     'fYDrhbVlV1E',
     'qoXgaF27zBc',
     'b9drVB7xIOI',
-    'TQ-q5WAVHj0'
+    'TQ-q5WAVHj'
   ];
 
   cards: CardData[] = [];

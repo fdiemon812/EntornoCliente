@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-restart-dialog',
   templateUrl: './restart-dialog.component.html',
-  styleUrls: ['./restart-dialog.component.scss']
+  styleUrls: ['./restart-dialog.component.css']
 })
 export class RestartDialogComponent implements OnInit {
 

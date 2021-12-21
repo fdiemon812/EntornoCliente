@@ -6,7 +6,6 @@ import { GameCardComponent } from './game-card/game-card.component';
 
 @NgModule({
   declarations: [
-    GameCardComponent,
     GameCardComponent
   ],
   imports: [
